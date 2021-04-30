@@ -1,0 +1,180 @@
+.playerWrapper {
+	width: 25rem;
+	height: 100vh;
+
+	padding: 1.5rem 3rem;
+
+	background-color: var(--purple-500);
+	
+	display: flex;
+	flex-direction: column;
+
+	justify-content: space-between;
+	align-items: center;
+
+	footer {
+		align-self: stretch;
+		margin-top: 2rem;
+
+		&.empty {
+			.progress {
+				opacity: 0.6;
+			}
+		}
+	}
+
+	header {
+		width: 100%;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		strong {
+			margin-left: 1rem;
+		}
+	}
+
+	strong {
+		font-family: 'Lexend', sans-serif;
+		font-weight: 600;
+		color: var(--white);
+	}
+}
+
+.emptyPlayer {
+	overflow: hidden;
+
+	width: 100%;
+	height: 12rem;
+	padding: 1.5rem;
+	
+	border: 2px dashed var(--purple-300);
+
+	background: linear-gradient(143deg, rgba(140, 100, 255, 0.8), 0% rgba(0, 0, 0, 0.8) 100%);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	p {
+		text-align: center;
+		color: var(--white);
+	}
+}
+
+.currentEpisode {
+	width: 100%;
+	height: 12rem;
+
+	img {
+		width: 100%;
+		height: 12rem;
+		border-radius: 1rem;
+	}
+
+	strong, span {
+		display: block;
+		color: var(--white);
+		text-align: center;
+	}
+
+	span {
+		margin-top: 1rem;
+
+		line-height: 1.4;
+		font-size: 0.875rem;
+
+		opacity: 0.8;
+	}
+
+	strong {
+		font-family: 'Lexend', sans-serif;
+		margin-top: 1rem;
+	}
+}
+
+.progress {
+	width: 100%;
+	margin: 2rem 0;
+
+	font-size: 0.875rem;
+
+	display: flex;
+	align-items: center;
+
+	span {
+		color: var(--white);
+		font-size: 0.875rem;
+	}
+
+	.slider {
+		width: 100%;
+		margin: 0 1rem;
+
+		.emptySlider {
+			width: 100%;
+			height: 4px;
+
+			border-radius: 1px;
+
+			background-color: var(--purple-300);
+		}
+	}
+}
+
+.controls {
+	margin-top: 1rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	button {
+		padding: 0.8rem;
+		background: transparent;
+		font-size: 0;
+		cursor: pointer;
+
+		transition: opacity 0.4s;
+
+		&:disabled {
+			cursor: no-drop;
+			opacity: 0.6;
+		}
+
+		&.isActive {
+			filter: invert(0.35) sepia(1) saturate(3) hue-rotate(100deg);
+		}
+
+		&.isActive:hover {
+			opacity: 0.9;
+		}
+
+		&.playButton {
+			background-color: var(--purple-300);
+			border-radius: 1rem;
+
+			width: 3.5rem;
+			height: 3.5rem;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			transition: background 0.6s;
+
+			&:hover:not(:disabled) {
+				background-color: var(--purple-800);
+			}
+		}
+
+		&:not(:first-child) {
+			margin-left: 0.8rem;
+		}
+
+		&:hover:not(:disabled) {
+			opacity: 0.8;
+		}
+	}
+}
