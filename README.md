@@ -14,11 +14,11 @@
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/lucasbernardol/podcastr?color=%238257e5&style=flat-square">
 
- <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/lucasbernardol/podcastr?color=%238257e5&style=flat-square">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/lucasbernardol/podcastr?color=%238257e5&style=flat-square">
 
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/lucasbernardol/podcastr?color=%238257e5">
 
-  <img src="https://img.shields.io/badge/author-Jos%C3%A9%20Lucas-%8257e5" alt="Author">
+  <img alt="GitHub" src="https://img.shields.io/github/license/lucasbernardol/podcastr?color=%238257e5&style=flat-square">
 </p>
 
 ## :recycle: Tecnologias
